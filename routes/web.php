@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/posts/{id}', function ($id) {
     return "Calling the Post # $id";
 })->where('id', '[0-9]+');
+
+Route::get('/searches/{value}', function ($value) {
+    return "You are looking for: $value";
+})->where('value', '[A-Za-z]+');
