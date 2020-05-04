@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/posts/{id}', function ($id) {
+    return "Calling the Post # $id";
+})->where('id', '[0-9]+');
