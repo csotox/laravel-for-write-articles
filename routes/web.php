@@ -24,3 +24,7 @@ Route::get('/posts/{id}', function ($id) {
 Route::get('/searches/{value}', function ($value) {
     return "You are looking for: $value";
 })->where('value', '[A-Za-z]+');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
