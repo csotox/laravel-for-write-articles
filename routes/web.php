@@ -25,7 +25,7 @@ Route::get('/searches/{value}', function ($value) {
     return "You are looking for: $value";
 })->where('value', '[A-Za-z]+');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
