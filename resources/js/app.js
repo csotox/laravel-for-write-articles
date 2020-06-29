@@ -21,6 +21,12 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+// Ejemplo de comunicaciones padre hijo
+Vue.component('contenedor-padre', require('./views/comunica/Contenedor.vue').default);
+Vue.component('mostrar', require('./views/comunica/Mostrar.vue').default);
+Vue.component('botones', require('./views/comunica/Botones.vue').default);
+Vue.component('cambio', require('./views/comunica/Cambio.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

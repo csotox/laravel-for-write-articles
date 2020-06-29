@@ -28,3 +28,8 @@ Route::get('/searches/{value}', function ($value) {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/vue-comunicacion-componente-padre-hijo', function () {
+    return view('ejemplos.vue.comunicaPadreHijo');
+});
